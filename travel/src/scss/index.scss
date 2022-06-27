@@ -1,0 +1,15 @@
+@import "normalize.css";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../img/desktop/bg-lg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

@@ -1,0 +1,135 @@
+@import "normalize.css";
+.button {
+  border: none;
+  font-family: rh-text-tr, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  width: 228px;
+  height: 59px;
+  background: #0d606f;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+@font-face {
+  src: url("../fonts/aleo-v11-latin-regular.woff2") format("woff2");
+  font-family: "aleo-tr";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/aleo-v11-latin-italic.woff2") format("woff2");
+  font-family: "aleo-tr";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/aleo-v11-latin-700.woff2") format("woff2");
+  font-family: "aleo-tr";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/aleo-v11-latin-700italic.woff2") format("woff2");
+  font-family: "aleo-tr";
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/red-hat-text-v11-latin-regular.woff2") format("woff2");
+  font-family: "rh-text-tr";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/red-hat-text-v11-latin-500.woff2") format("woff2");
+  font-family: "rh-text-tr";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/magra-v14-latin-700.woff2") format("woff2");
+  font-family: "magra-tr";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/sf-pro-text-semibold.woff2") format("woff2");
+  font-family: "sf-pro-tr";
+  font-weight: 600;
+  font-style: normal;
+}
+.header {
+  font-family: aleo-tr;
+  color: #fff;
+  background-color: rgba(242, 120, 92, 0.7);
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 90px;
+  padding: 0 120px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+}
+.header__logo {
+  font-family: magra-tr, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  gap: 6px;
+}
+.header__logo a {
+  color: #fff;
+}
+.header__menu {
+  font-family: rh-text-tr, sans-serif;
+  font-weight: 500;
+}
+.header__menu ul {
+  display: flex;
+  align-content: center;
+  gap: 42px;
+}
+.header__menu li, .header__menu a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+.header__button {
+  font-size: 16px;
+  color: #fff;
+  width: 103px;
+  height: 41px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.section__title {
+  color: #f2785c;
+  text-transform: uppercase;
+  font-family: rh-text-tr, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+main {
+  color: #0d606f;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../img/desktop/bg-lg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=index.css.map */
