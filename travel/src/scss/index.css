@@ -122,6 +122,33 @@ main {
   color: #0d606f;
 }
 
+.steps {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 0 131px;
+}
+.steps__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  gap: 30px;
+}
+.step__icon {
+  background: #f2785c;
+  border-radius: 10px;
+}
+.step__text {
+  font-family: aleo-tr, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 a {
   text-decoration: none;
 }

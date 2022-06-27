@@ -16,5 +16,28 @@ main {
 }
 
 .steps {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 0 131px;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  gap: 30px;
+  &__icon {
+    background: $accent;
+    border-radius: $radius;
+  }
+  &__text {
+    font-family: aleo-tr, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
