@@ -17,7 +17,6 @@ main {
 
 .steps {
   text-align: center;
-  background-color: antiquewhite;
   padding: 0 131px;
   &__body {
     display: flex;
@@ -28,11 +27,18 @@ main {
 .step {
   display: flex;
   flex-direction: column;
-  justify-content: normal;
+  align-items: center;
   gap: 30px;
-  &__icon {
+  &__icon-wrapper {
     background: $accent;
     border-radius: $radius;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
   }
   &__text {
     font-family: aleo-tr, sans-serif;

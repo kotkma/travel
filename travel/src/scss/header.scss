@@ -4,20 +4,31 @@
 @import "fonts";
 
 .header {
-  font-family: aleo-tr;
+  height: 765px;
+  background-image: url(../img/desktop/bg-lg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-family: aleo-tr, sans-serif;
   color: #fff;
   background-color: rgba($accent, $opacity);
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
   width: 100vw;
-  height: 90px;
-  padding: 0 120px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+  &__container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 90px;
+  }
   &__logo {
     font-family: magra-tr, sans-serif;
     font-weight: 700;
@@ -48,7 +59,44 @@
     color: #fff;
     width: 103px;
     height: 41px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   }
 }
 
+.preview {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  &__container {
+    max-width: 892px;
+  }
+  &__title {
+    font-family: aleo-tr, sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+  }
+  &__oneliner {
+    font-family: aleo-tr, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__form {
+    display:flex;
+    flex-direction:row;
+    padding:2px;
+  }
+  &__input {
+    flex-grow:2;
+    border:none;
+    border-radius: $radius;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__button {
+    color:white;
+  }
+}
