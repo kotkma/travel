@@ -1,2 +1,19 @@
 @import "variables";
 @import "mixins";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__copyright {}
+  &__soc {
+    display: flex;
+    &-hidden {
+      overflow: hidden;
+      width: 172px;
+    }
+  }
+  & li {
+    list-style: none;
+  }
+}

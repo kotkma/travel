@@ -122,7 +122,6 @@
 
 .preview {
   display: flex;
-  justify-content: center;
   color: #fff;
 }
 .preview__container {
@@ -159,6 +158,7 @@
 }
 
 .section__title {
+  text-align: center;
   color: #f2785c;
   text-transform: uppercase;
   font-family: rh-text-tr, sans-serif;
@@ -173,7 +173,6 @@ main {
 }
 
 .steps {
-  text-align: center;
   padding: 0 131px;
 }
 .steps__body {
@@ -203,12 +202,48 @@ main {
   line-height: 24px;
 }
 
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__soc {
+  display: flex;
+}
+.footer__soc-hidden {
+  overflow: hidden;
+  width: 172px;
+}
+.footer li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
