@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "card.css";
 .button {
   border: none;
   font-family: rh-text-tr, sans-serif;

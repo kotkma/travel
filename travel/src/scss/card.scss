@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  gap: 40px;
+  & h3 {
+    font-family: aleo-tr, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    margin: 0 0 24px 0;
+  }
+  & p {
+    font-family: aleo-tr, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
