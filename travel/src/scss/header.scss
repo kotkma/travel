@@ -11,6 +11,7 @@
 }
 
 .navbar {
+  position: absolute;
   display: flex;
   justify-content: center;
   font-family: aleo-tr, sans-serif;
@@ -68,9 +69,11 @@
   display: flex;
   color: #fff;
   &__container {
+    padding-top: 120px;
     max-width: 892px;
   }
   &__title {
+    margin: 0;
     font-family: aleo-tr, sans-serif;
     font-weight: 700;
     font-size: 80px;

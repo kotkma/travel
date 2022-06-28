@@ -68,6 +68,7 @@
 }
 
 .navbar {
+  position: absolute;
   display: flex;
   justify-content: center;
   font-family: aleo-tr, sans-serif;
@@ -126,9 +127,11 @@
   color: #fff;
 }
 .preview__container {
+  padding-top: 120px;
   max-width: 892px;
 }
 .preview__title {
+  margin: 0;
   font-family: aleo-tr, sans-serif;
   font-weight: 700;
   font-size: 80px;
