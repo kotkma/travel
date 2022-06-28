@@ -103,6 +103,7 @@
   font-weight: 500;
 }
 .navbar__menu ul {
+  padding: 0;
   display: flex;
   align-content: center;
   gap: 42px;
@@ -239,6 +240,10 @@ main {
 
 a {
   text-decoration: none;
+}
+
+body {
+  background: #fff;
 }
 
 .container {
