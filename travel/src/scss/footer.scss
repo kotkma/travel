@@ -1,19 +1,111 @@
 @import "variables";
 @import "mixins";
 
-.footer {
+.stories-footer-wrapper {
+  margin: 0 auto;
+  width: 1440px;
+  background-image: url(../img/desktop/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, $opacity);
+}
+
+.cards__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  &__copyright {}
+  flex-direction: column;
+  gap: 30px;
+  & a {
+    margin: 40px 0 41px;
+  }
+}
+
+.footer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 61px;
+  width: 100%;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__copyright {
+    font-family: rh-text-tr, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  &__contacts {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    & i {
+      font-size: 24px;
+    }
+    & a {
+      font-family: aleo-tr, sans-serif;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      transition: color 0.3s ease-in-out;
+      &:hover, :focus {
+        color: $accent;
+        fill: $accent;
+        transition: color 0.3s ease-in-out;
+      }
+    }
+  }
   &__soc {
     display: flex;
-    &-hidden {
-      overflow: hidden;
-      width: 172px;
+    &__list {
+      display: flex;
+      gap: 20px;
+    }
+    & a {
+      width: 33.65px;
+      height: 33.65px;
+      transition: fill 0.3s ease-in-out;
+      & :hover, :focus {
+        fill: $accent;
+        transition: fill 0.3s ease-in-out;
+      }
+    }
+    & svg {
+      width: 33.65px;
+      height: 33.65px;
     }
   }
   & li {
     list-style: none;
   }
+}
+
+.rsschool path, .soc__svg {
+  transition: fill 0.3s ease-in-out;
+}
+
+.rsschool:hover path{
+  fill: $accent;
+  transition: fill 0.3s ease-in-out;
+}
+
+.soc__svg {
+  transition: fill 0.3s ease-in-out;
+}
+
+.soc_svg:hover path{
+  fill: $accent;
+  transition: fill 0.3s ease-in-out;
 }

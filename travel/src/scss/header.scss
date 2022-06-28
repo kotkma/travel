@@ -11,9 +11,11 @@
 }
 
 .navbar {
+  z-index: 10;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: aleo-tr, sans-serif;
   color: #fff;
   background-color: rgba($accent, $opacity);
@@ -24,8 +26,6 @@
   box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
   &__container {
     display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
     align-items: center;
     align-content: center;
     height: 90px;
@@ -37,6 +37,7 @@
     line-height: 39px;
     display: flex;
     gap: 6px;
+    margin-right: 158px;
     & a {
       color: #fff;
     }
@@ -57,11 +58,11 @@
     }
   }
   &__button {
+    margin-left: 196px;
     font-size: 16px;
-    color: #fff;
     width: 103px;
     height: 41px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
   }
 }
 
@@ -69,7 +70,7 @@
   display: flex;
   color: #fff;
   &__container {
-    padding-top: 120px;
+    padding-top: 121px;
     max-width: 892px;
   }
   &__title {
@@ -80,6 +81,7 @@
     line-height: 96px;
   }
   &__oneliner {
+    margin: 33px 0 46px;
     font-family: aleo-tr, sans-serif;
     font-style: italic;
     font-weight: 700;
@@ -89,17 +91,29 @@
   &__form {
     display:flex;
     flex-direction:row;
-    padding:2px;
+    width: 100%;
+    background: rgba(255, 255, 255, $opacity);
+    border-radius: $radius;
   }
   &__input {
     flex-grow:2;
     border:none;
-    border-radius: $radius;
+    color: $accent;
+    background: transparent;
+    font-family: aleo-tr, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    &::placeholder {
+      color: $accent;
+      padding: 33px 293px 41px 41px;
+    }
     &:focus {
       outline: none;
     }
   }
   &__button {
-    color:white;
+    margin: 18px;
   }
 }
